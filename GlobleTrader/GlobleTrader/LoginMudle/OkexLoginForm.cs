@@ -73,7 +73,6 @@ namespace WindowsFormsApp1
 
         #endregion
 
-
         #region V5版本
         private void button_Login_V5_Click(object sender, EventArgs e)
         {
@@ -83,9 +82,16 @@ namespace WindowsFormsApp1
                 Port = this.textBox_secrets_V5.Text,
                 Exdata = this.textBox_phrease_V5.Text
             };
-
+            
+            //订阅Log
             ProxyManager.GetInstance().GetProxy(PROXYTHROUGH.Okex_V5_Swap).OnLogEvent += OkexLoginForm_OnLogEventV5;
+            
+            //登陆
             ProxyManager.GetInstance().GetProxy(PROXYTHROUGH.Okex_V5_Swap).Init(lRequest);
+
+            //登陆完毕设置账户模式
+            //配置设置已经在Form_Load初始化radio_button_check时初始化了，切换可以radio_btn进行
+
             //ProxyManager.GetInstance().GetProxy(PROXYTHROUGH.Okex_V5_Swap).OnContractEvent += OkexLoginForm_OnContractEvent;
         }
 
@@ -122,7 +128,53 @@ namespace WindowsFormsApp1
             this.Hide();
             e.Cancel = true;
         }
+
+        private void Form_Load(object sender, EventArgs e)
+        {
+            this.radioButton_BBCash_V5.Checked = false;
+            this.radioButton_BBCross_V5.Checked = false;
+            this.radioButton_SwapCross_V5.Checked = true;
+            this.radioButton_SwapIoslated_V5.Checked = false;
+        }
+
         #endregion
 
+        #region V5配置设置
+        private void radioButton_BBCash_V5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!this.radioButton_BBCash_V5.Checked) return;
+
+            ProxyConfig pConfig = new ProxyConfig();
+            pConfig.Data = "cash";
+            ProxyManager.GetInstance().GetProxy(PROXYTHROUGH.Okex_V5_Swap).ProxyConfig = pConfig;
+        }
+
+        private void radioButton_BBCross_V5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!this.radioButton_BBCross_V5.Checked) return;
+
+            ProxyConfig pConfig = new ProxyConfig();
+            pConfig.Data = "cross";
+            ProxyManager.GetInstance().GetProxy(PROXYTHROUGH.Okex_V5_Swap).ProxyConfig = pConfig;
+        }
+
+        private void radioButton_SwapCross_V5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!this.radioButton_SwapCross_V5.Checked) return;
+
+            ProxyConfig pConfig = new ProxyConfig();
+            pConfig.Data = "cross";
+            ProxyManager.GetInstance().GetProxy(PROXYTHROUGH.Okex_V5_Swap).ProxyConfig = pConfig;
+        }
+
+        private void radioButton_SwapIoslated_V5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!this.radioButton_SwapIoslated_V5.Checked) return;
+
+            ProxyConfig pConfig = new ProxyConfig();
+            pConfig.Data = "isolated";
+            ProxyManager.GetInstance().GetProxy(PROXYTHROUGH.Okex_V5_Swap).ProxyConfig = pConfig;
+        }
+        #endregion
     }
 }

@@ -72,7 +72,7 @@
     <Compile Include="FutuProxy\FutuProxy.cs" />
     <Compile Include="IBProxy\CIBProxy.cs" />
     <Compile Include="OkexProxy\OkexCommon.cs" />
-    <Compile Include="OkexProxy\OkexConstantV5.cs" />
+    <Compile Include="OkexProxy\OkexConstant_V5.cs" />
     <Compile Include="OkexProxy\OkexProxy_V3.cs" />
     <Compile Include="OkexProxy\OkexProxy_V5.cs" />
     <Compile Include="ProxyMamager.cs" />

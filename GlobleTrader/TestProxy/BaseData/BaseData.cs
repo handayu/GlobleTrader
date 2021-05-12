@@ -130,8 +130,6 @@ namespace TestProxy
         public string IP { get; set; }
         public string Port { get; set; }
         public string Exdata { get; set; }
-
-
     }
 
     public class ContractRequest : BaseData
@@ -145,7 +143,6 @@ namespace TestProxy
 
     public class OrderRequest : BaseData
     {
-
         public string Symbol { get; set; }
         public Exchange Exchange { get; set; }
         public Direction Direction { get; set; }
@@ -169,14 +166,12 @@ namespace TestProxy
         public DateTime STime { get; set; }
         public DateTime eTime { get; set; }
         public Interval Interval { get; set; }
-
     }
     #endregion
 
     #region 公共返回数据
     public class TickData : BaseData
     {
-
         public string Symbol { get; set; }
         public Exchange Exchange { get; set; }
         public DateTime DTime { get; set; }
@@ -290,12 +285,10 @@ namespace TestProxy
         public Product Product { get; set; }
         public double Size { get; set; }
         public double PriceTick { get; set; }
-
         public double MinVolume { get; set; }           //# minimum trading volume of the contract
         public bool StopSupported { get; set; }    //# whether server supports stop order
         public bool NetPosition { get; set; }       //# whether gateway uses net position volume
         public bool HistoryData { get; set; }       //# whether gateway provides bar history data
-
         public double OptionStrike { get; set; }
         public string OptionUnderlying { get; set; }     //# vt_symbol of underlying contract
         public OptionType OptionType { get; set; }
@@ -307,9 +300,17 @@ namespace TestProxy
     #endregion
 
     #region 公共配置数据
-    public class LoginConfig : BaseData
+    public class ProxyConfig : BaseData
     {
+        /// <summary>
+        /// 配置数据 - 按需配置
+        /// </summary>
+        public string Data { get; set; }
 
+        /// <summary>
+        /// 配置说明
+        /// </summary>
+        public string Reference { get; set; }
     }
     #endregion
 }

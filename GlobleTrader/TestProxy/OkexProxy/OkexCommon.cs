@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 namespace TestProxy
 {
     /// <summary>
-    /// Okex工具类，主要是把上层的类型转化为Okex的类型的工具类
+    /// Okex工具类，上层的类型|Okex的类型转换类
     /// </summary>
     public static class OkexCommon
     {
+        #region V3
         /// <summary>
-        /// Commom标准Interval类型转化为Okex-V3传参的数据类型
+        /// OkexV3-Commom标准Interval类型转化为Okex-V3传参的数据类型
         /// </summary>
         /// <param name="interval"></param>
         /// <returns></returns>
@@ -49,7 +50,9 @@ namespace TestProxy
 
             return 0;
         }
+        #endregion
 
+        #region V5
         /// <summary>
         /// Okex_v5 direction转为Common-Direction类型
         /// </summary>
@@ -74,7 +77,7 @@ namespace TestProxy
         }
 
         /// <summary>
-        /// Common标准Product类型转为OkexV5-Product类型
+        /// OkexV5-Common标准Product类型转为OkexV5-Product类型
         /// </summary>
         /// <param name="pd"></param>
         /// <returns></returns>
@@ -121,8 +124,12 @@ namespace TestProxy
 
             return Product.NULL;
         }
-    
-    
+     
+        /// <summary>
+        /// OkexV5-标准Interval转换为OkexV5的类型
+        /// </summary>
+        /// <param name="it"></param>
+        /// <returns></returns>
         public static string Trans_CommonInterval_ToOkexV5(Interval it)
         {
             switch(it)
@@ -153,5 +160,26 @@ namespace TestProxy
                     return "";
             }
         }
+
+        /// <summary>
+        /// OkexV5-TradeMode转换为RestFul接口的String
+        /// </summary>
+        /// <param name="mode"></param>
+        /// <returns></returns>
+        public static string Trans_TradeMode_ToV5TradeModeStr(TradeMode mode)
+        {
+            switch(mode)
+            {
+                case TradeMode.Cash:
+                    return "cash";
+                case TradeMode.Cross:
+                    return "cross";
+                case TradeMode.Isolated:
+                    return "isolated";
+            }
+
+            return "";
+        }
+        #endregion
     }
 }

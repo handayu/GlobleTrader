@@ -514,4 +514,13 @@ namespace TestProxy
         public List<List<string>> data { get; set; }
     }
     #endregion
+
+    #region V5TradeMode
+    public enum TradeMode
+    {
+        Cash = 0,
+        Cross,
+        Isolated
+    }
+    #endregion
 }

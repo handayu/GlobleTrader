@@ -311,6 +311,56 @@ namespace TestProxy
             }
         }
 
+        private async void SendV5Order(OrderRequest orderReq)
+        {
+            LogData args = new LogData();
+
+            Dictionary<string, string> m_placeOrderDic = new Dictionary<string, string>();
+            //传参
+            m_placeOrderDic["instId"] = orderReq.Symbol;
+            m_placeOrderDic["tdMode"] = this.m_proxyConfig.Data;
+            m_placeOrderDic["side"] = "";  //buy-sell
+            m_placeOrderDic["ordType"] = "";//market-limit-post_only-fok-ioc
+            m_placeOrderDic["sz"] = "";
+            m_placeOrderDic["px"] = "";
+
+
+            string placeOrderStr = await m_tradeApi.PlaceOrder(m_placeOrderDic);   //查账户明细
+
+            //placeOrderV5 accountV5 = JsonDataContractJsonSerializer.DeserializeJsonToObject<AccountV5>(accountStr);
+            ////...缓存 - 发布 
+            //if (accountV5 != null && accountV5.code == "0" && accountV5.data.Count > 0)
+            //{
+            //    List<AccountData> acDList = new List<AccountData>();
+
+            //    List<DataItem> accountList = accountV5.data;
+            //    foreach (DataItem item in accountList)
+            //    {
+            //        List<DetailsItem> detaiList = item.details;
+            //        foreach (DetailsItem dItem in detaiList)
+            //        {
+            //            AccountData selfAcData = new AccountData()
+            //            {
+            //                Proxy = PROXYTHROUGH.Okex_V5_Swap,
+            //                AccountName = dItem.ccy,
+            //                AccountValue = dItem.availEq,
+            //                AccountCurrency = dItem.crossLiab
+            //            };
+            //            acDList.Add(selfAcData);
+            //        }
+            //    }
+
+            //    this.m_accounts.Clear();
+            //    this.m_accounts = acDList;
+
+            //    OnAccount(acDList);
+
+            //    args.Msg = "Okex-V5登陆成功，账户查询成功！";
+            //    args.Level = 1;
+
+            //    this.OnLog(args);
+        }
+
         public override void Connect()
         {
 
@@ -341,7 +391,7 @@ namespace TestProxy
         }
 
         protected override List<OrderData> QueryOrder()
-        { 
+        {
             return null;
         }
 
@@ -353,7 +403,7 @@ namespace TestProxy
 
         public override void SendOrder(OrderRequest orderReq)
         {
-            //throw new NotImplementedException();
+            SendV5Order(orderReq);
         }
 
         public override void CancelOrder()

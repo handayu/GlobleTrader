@@ -119,16 +119,21 @@ namespace TestProxy
         }
 
         /// <summary>
-        /// 交易是否登陆属性
+        /// [Proxy]交易/账户等配置
         /// </summary>
-        //protected Logi m_loginConfig = false;
-        //public bool IsTdLogin
-        //{
-        //    get
-        //    {
-        //        return m_tdIsLogin;
-        //    }
-        //}
+        protected ProxyConfig m_proxyConfig = new ProxyConfig();
+        public ProxyConfig ProxyConfig
+        {
+            get
+            {
+                return m_proxyConfig;
+            }
+
+            set
+            {
+                m_proxyConfig = value;
+            }
+        }
 
         /// <summary>
         /// 唯一的一笔请求 - 和响应相对应 - 用于前端对特定的对象的查询业务进行广播过滤 - 由外部调用方法进行自增传入

@@ -1,0 +1,5 @@
+
+*.exe
+*.dll
+GlobleTrader/Commonlib/TestProxy.dll
+*.exe
