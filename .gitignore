@@ -3,3 +3,6 @@
 *.dll
 GlobleTrader/Commonlib/TestProxy.dll
 *.exe
+*.cache
+*.pdb
+*.dll
