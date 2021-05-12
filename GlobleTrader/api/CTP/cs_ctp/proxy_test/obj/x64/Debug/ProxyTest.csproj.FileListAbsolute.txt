@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\CTPTest.exe.config
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\CTPTest.exe
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\CTPTest.pdb
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\Proxy.dll
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\Proxy.pdb
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\Proxy.xml
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\x64\Debug\ProxyTest.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\x64\Debug\ProxyTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\x64\Debug\ProxyTest.csproj.CopyComplete
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\x64\Debug\CTPTest.exe
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\x64\Debug\CTPTest.pdb

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "VUvbzF0SGxisoABtzxhXNkjK9NRtealFUJ6X6KNKTXUmSpsqVp/ESsuCZpRDQLKLsbdrKy/iQojSxkqGCyjjbQ==",
+  "success": true,
+  "projectFilePath": "D:\\004 对接测试云环境\\重要文件\\GlobleTrader\\GlobleTrader\\api\\OKExSDK\\OKExSDK.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

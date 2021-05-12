@@ -1,0 +1,9 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (obj\Debug\) contains files shared from another project (ctp_trade.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  dllmain.cpp
+  quote.cpp
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\quote.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\quote.h(53,57): error C2065: 'FrontConnected': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\quote.h(53,72): error C2146: syntax error: missing ')' before identifier '_FrontConnected'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\quote.h(64,75): error C2065: 'HeartBeatWarning': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\quote.h(64,92): error C2146: syntax error: missing ')' before identifier '_HeartBeatWarning'

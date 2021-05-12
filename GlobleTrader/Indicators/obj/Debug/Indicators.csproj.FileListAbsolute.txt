@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Commonlib\Indicators.dll
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Commonlib\Indicators.pdb
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Indicators\obj\Debug\Indicators.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Indicators\obj\Debug\Indicators.dll
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Indicators\obj\Debug\Indicators.pdb
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Indicators\obj\Debug\Indicators.csproj.CopyComplete
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Indicators\obj\Debug\Indicators.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Indicators\obj\Debug\Indicators.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Indicators\obj\Debug\Indicators.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Indicators\obj\Debug\Indicators.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Indicators\obj\Debug\Indicators.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Commonlib\Indicators.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Commonlib\Indicators.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Indicators\obj\Debug\Indicators.csproj.CopyComplete

@@ -1,0 +1,111 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (obj\Debug\) contains files shared from another project (ctp_quote.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  dllmain.cpp
+  trade.cpp
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(614,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1191,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1911,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(53,57): error C2065: 'FrontConnected': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(53,72): error C2146: syntax error: missing ')' before identifier '_FrontConnected'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(64,75): error C2065: 'HeartBeatWarning': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(64,92): error C2146: syntax error: missing ')' before identifier '_HeartBeatWarning'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(73,19): error C2065: 'RspAuthenticate': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(73,35): error C2146: syntax error: missing ')' before identifier '_RspAuthenticate'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(77,19): error C2065: 'RspAuthenticate': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(77,35): error C2146: syntax error: missing ')' before identifier '_RspAuthenticate'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(225,19): error C2065: 'RspParkedOrderInsert': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(225,40): error C2146: syntax error: missing ')' before identifier '_RspParkedOrderInsert'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(229,19): error C2065: 'RspParkedOrderInsert': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(229,40): error C2146: syntax error: missing ')' before identifier '_RspParkedOrderInsert'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(275,19): error C2065: 'RspQryMaxOrderVolume': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(275,40): error C2146: syntax error: missing ')' before identifier '_RspQryMaxOrderVolume'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(279,19): error C2065: 'RspQryMaxOrderVolume': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(279,40): error C2146: syntax error: missing ')' before identifier '_RspQryMaxOrderVolume'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(291,19): error C2065: 'RspSettlementInfoConfirm': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(291,44): error C2146: syntax error: missing ')' before identifier '_RspSettlementInfoConfirm'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(295,19): error C2065: 'RspSettlementInfoConfirm': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(295,44): error C2146: syntax error: missing ')' before identifier '_RspSettlementInfoConfirm'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(307,19): error C2065: 'RspRemoveParkedOrder': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(307,40): error C2146: syntax error: missing ')' before identifier '_RspRemoveParkedOrder'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(311,19): error C2065: 'RspRemoveParkedOrder': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(311,40): error C2146: syntax error: missing ')' before identifier '_RspRemoveParkedOrder'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(442,19): error C2065: 'RspOptionSelfCloseInsert': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(442,44): error C2146: syntax error: missing ')' before identifier '_RspOptionSelfCloseInsert'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(446,19): error C2065: 'RspOptionSelfCloseInsert': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(446,44): error C2146: syntax error: missing ')' before identifier '_RspOptionSelfCloseInsert'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(458,19): error C2065: 'RspOptionSelfCloseAction': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(458,44): error C2146: syntax error: missing ')' before identifier '_RspOptionSelfCloseAction'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(462,19): error C2065: 'RspOptionSelfCloseAction': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(462,44): error C2146: syntax error: missing ')' before identifier '_RspOptionSelfCloseAction'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(525,19): error C2065: 'RspQryInvestorPosition': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(525,42): error C2146: syntax error: missing ')' before identifier '_RspQryInvestorPosition'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(529,19): error C2065: 'RspQryInvestorPosition': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(529,42): error C2146: syntax error: missing ')' before identifier '_RspQryInvestorPosition'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(558,19): error C2065: 'RspQryInvestor': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(558,34): error C2146: syntax error: missing ')' before identifier '_RspQryInvestor'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(562,19): error C2065: 'RspQryInvestor': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(562,34): error C2146: syntax error: missing ')' before identifier '_RspQryInvestor'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(693,19): error C2065: 'RspQrySettlementInfo': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(693,40): error C2146: syntax error: missing ')' before identifier '_RspQrySettlementInfo'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(697,19): error C2065: 'RspQrySettlementInfo': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(697,40): error C2146: syntax error: missing ')' before identifier '_RspQrySettlementInfo'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(726,19): error C2065: 'RspQryInvestorPositionDetail': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(726,48): error C2146: syntax error: missing ')' before identifier '_RspQryInvestorPositionDetail'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(730,19): error C2065: 'RspQryInvestorPositionDetail': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(730,48): error C2146: syntax error: missing ')' before identifier '_RspQryInvestorPositionDetail'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(776,19): error C2065: 'RspQryInvestorPositionCombineDetail': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(776,55): error C2146: syntax error: missing ')' before identifier '_RspQryInvestorPositionCombineDetail'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(780,19): error C2065: 'RspQryInvestorPositionCombineDetail': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(780,55): error C2146: syntax error: missing ')' before identifier '_RspQryInvestorPositionCombineDetail'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(792,19): error C2065: 'RspQryCFMMCTradingAccountKey': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(792,48): error C2146: syntax error: missing ')' before identifier '_RspQryCFMMCTradingAccountKey'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(796,19): error C2065: 'RspQryCFMMCTradingAccountKey': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(796,48): error C2146: syntax error: missing ')' before identifier '_RspQryCFMMCTradingAccountKey'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(893,19): error C2065: 'RspQrySecAgentACIDMap': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(893,41): error C2146: syntax error: missing ')' before identifier '_RspQrySecAgentACIDMap'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(897,19): error C2065: 'RspQrySecAgentACIDMap': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(897,41): error C2146: syntax error: missing ')' before identifier '_RspQrySecAgentACIDMap'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(926,19): error C2065: 'RspQryProductGroup': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(926,38): error C2146: syntax error: missing ')' before identifier '_RspQryProductGroup'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(930,19): error C2065: 'RspQryProductGroup': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(930,38): error C2146: syntax error: missing ')' before identifier '_RspQryProductGroup'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(942,19): error C2065: 'RspQryMMInstrumentCommissionRate': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(942,52): error C2146: syntax error: missing ')' before identifier '_RspQryMMInstrumentCommissionRate'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(946,19): error C2065: 'RspQryMMInstrumentCommissionRate': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(946,52): error C2146: syntax error: missing ')' before identifier '_RspQryMMInstrumentCommissionRate'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(975,19): error C2065: 'RspQryInstrumentOrderCommRate': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(975,49): error C2146: syntax error: missing ')' before identifier '_RspQryInstrumentOrderCommRate'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(979,19): error C2065: 'RspQryInstrumentOrderCommRate': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(979,49): error C2146: syntax error: missing ')' before identifier '_RspQryInstrumentOrderCommRate'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1008,19): error C2065: 'RspQrySecAgentCheckMode': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1008,43): error C2146: syntax error: missing ')' before identifier '_RspQrySecAgentCheckMode'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1012,19): error C2065: 'RspQrySecAgentCheckMode': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1012,43): error C2146: syntax error: missing ')' before identifier '_RspQrySecAgentCheckMode'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1024,19): error C2065: 'RspQrySecAgentTradeInfo': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1024,43): error C2146: syntax error: missing ')' before identifier '_RspQrySecAgentTradeInfo'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1028,19): error C2065: 'RspQrySecAgentTradeInfo': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1028,43): error C2146: syntax error: missing ')' before identifier '_RspQrySecAgentTradeInfo'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1057,19): error C2065: 'RspQryOptionInstrCommRate': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1057,45): error C2146: syntax error: missing ')' before identifier '_RspQryOptionInstrCommRate'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1061,19): error C2065: 'RspQryOptionInstrCommRate': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1061,45): error C2146: syntax error: missing ')' before identifier '_RspQryOptionInstrCommRate'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1124,19): error C2065: 'RspQryOptionSelfClose': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1124,41): error C2146: syntax error: missing ')' before identifier '_RspQryOptionSelfClose'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1128,19): error C2065: 'RspQryOptionSelfClose': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1128,41): error C2146: syntax error: missing ')' before identifier '_RspQryOptionSelfClose'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1361,19): error C2065: 'RtnErrorConditionalOrder': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1361,44): error C2146: syntax error: missing ')' before identifier '_RtnErrorConditionalOrder'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1365,19): error C2065: 'RtnErrorConditionalOrder': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1365,44): error C2146: syntax error: missing ')' before identifier '_RtnErrorConditionalOrder'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1513,19): error C2065: 'RtnCFMMCTradingAccountToken': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1513,47): error C2146: syntax error: missing ')' before identifier '_RtnCFMMCTradingAccountToken'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1517,19): error C2065: 'RtnCFMMCTradingAccountToken': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1517,47): error C2146: syntax error: missing ')' before identifier '_RtnCFMMCTradingAccountToken'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1563,19): error C2065: 'ErrRtnOptionSelfCloseInsert': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1563,47): error C2146: syntax error: missing ')' before identifier '_ErrRtnOptionSelfCloseInsert'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1567,19): error C2065: 'ErrRtnOptionSelfCloseInsert': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1567,47): error C2146: syntax error: missing ')' before identifier '_ErrRtnOptionSelfCloseInsert'
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1579,19): error C2065: 'ErrRtnOptionSelfCloseAction': undeclared identifier
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\ctp_c\trade.h(1579,1): fatal error C1003: error count exceeds 100; stopping compilation
+  Generating Code...

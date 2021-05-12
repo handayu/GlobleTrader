@@ -1,0 +1,18 @@
+D:\TWS API\samples\CSharp\IBDLL\obj\Debug\IBDLL.csprojAssemblyReference.cache
+D:\TWS API\samples\CSharp\IBDLL\obj\Debug\IBDLL.csproj.CoreCompileInputs.cache
+D:\TWS API\samples\CSharp\IBDLL\bin\Debug\IBDLL.dll
+D:\TWS API\samples\CSharp\IBDLL\bin\Debug\IBDLL.pdb
+D:\TWS API\samples\CSharp\IBDLL\obj\Debug\IBDLL.dll
+D:\TWS API\samples\CSharp\IBDLL\obj\Debug\IBDLL.pdb
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Commonlib\IBDLL.dll
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Commonlib\IBDLL.pdb
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\IBDLL\obj\Debug\IBDLL.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\IBDLL\obj\Debug\IBDLL.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\IBDLL\obj\Debug\IBDLL.dll
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\IBDLL\obj\Debug\IBDLL.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Commonlib\IBDLL.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Commonlib\IBDLL.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\IBDLL\obj\Debug\IBDLL.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\IBDLL\obj\Debug\IBDLL.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\IBDLL\obj\Debug\IBDLL.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\IBDLL\obj\Debug\IBDLL.pdb

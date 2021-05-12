@@ -1,0 +1,23 @@
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\TestProxy\obj\Debug\TestProxy.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\TestProxy\obj\Debug\TestProxy.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\TestProxy\bin\Debug\TestProxy.dll
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\TestProxy\bin\Debug\TestProxy.pdb
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\TestProxy\obj\Debug\TestProxy.dll
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\TestProxy\obj\Debug\TestProxy.pdb
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Commonlib\TestProxy.dll
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\Commonlib\TestProxy.pdb
+C:\Users\Administrator\Desktop\AI-Trader\AITrader\TestProxy\obj\Debug\TestProxy.csproj.CopyComplete
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Commonlib\TestProxy.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\Commonlib\TestProxy.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.csproj.CopyComplete
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.csproj.CoreCompileInputs.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\Commonlib\TestProxy.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\Commonlib\TestProxy.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.csproj.CopyComplete
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestProxy\obj\Debug\TestProxy.csprojAssemblyReference.cache

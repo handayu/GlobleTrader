@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C31428E-B003-41AC-9662-7ED90728045F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GlobleTrader</RootNamespace>
+    <AssemblyName>GlobleTrader</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>catico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IBDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Commonlib\IBDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OKExSDKLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Commonlib\OKExSDKLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Reg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Commonlib\Reg.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TALibraryInCSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Commonlib\TALibraryInCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="TestProxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Commonlib\TestProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="TestService">
+      <HintPath>..\Commonlib\TestService.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Commonlib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\IniOperationClass.cs" />
+    <Compile Include="DllLoader\IndicatorsLoader.cs" />
+    <Compile Include="DllLoader\StrategyLoader.cs" />
+    <Compile Include="LoginForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginForm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMudle\CTPLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMudle\CTPLoginForm.Designer.cs">
+      <DependentUpon>CTPLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMudle\CTPRealLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMudle\CTPRealLoginForm.Designer.cs">
+      <DependentUpon>CTPRealLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMudle\FutuLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMudle\FutuLoginForm.Designer.cs">
+      <DependentUpon>FutuLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMudle\IBLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMudle\IBLoginForm.Designer.cs">
+      <DependentUpon>IBLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMudle\OkexLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMudle\OkexLoginForm.Designer.cs">
+      <DependentUpon>OkexLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMudle\TuShareLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMudle\TuShareLoginForm.Designer.cs">
+      <DependentUpon>TuShareLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\AddInstruments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\AddInstruments.Designer.cs">
+      <DependentUpon>AddInstruments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\ConnectListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\ConnectListForm.Designer.cs">
+      <DependentUpon>ConnectListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\OrderAccountListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\OrderAccountListForm.Designer.cs">
+      <DependentUpon>OrderAccountListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\PositionCompareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\PositionCompareForm.Designer.cs">
+      <DependentUpon>PositionCompareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\QueryContractForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\QueryContractForm.Designer.cs">
+      <DependentUpon>QueryContractForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\QuoteManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\QuoteManager.Designer.cs">
+      <DependentUpon>QuoteManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\StrategySettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\StrategySettingsForm.Designer.cs">
+      <DependentUpon>StrategySettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\ZedKLineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\ZedKLineForm.Designer.cs">
+      <DependentUpon>ZedKLineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerConnect\BrokerProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerConnect\BrokerProfileForm.Designer.cs">
+      <DependentUpon>BrokerProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerConnect\ManagerListConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerConnect\ManagerListConnect.Designer.cs">
+      <DependentUpon>ManagerListConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StrategyPerfomace\ClosePLSeriesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StrategyPerfomace\ClosePLSeriesUserControl.Designer.cs">
+      <DependentUpon>ClosePLSeriesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StrategyPerfomace\StrategyPerfomace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StrategyPerfomace\StrategyPerfomace.Designer.cs">
+      <DependentUpon>StrategyPerfomace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm\RenkoCreateTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm\RenkoCreateTestForm.Designer.cs">
+      <DependentUpon>RenkoCreateTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm\TestLoadDllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm\TestLoadDllForm.Designer.cs">
+      <DependentUpon>TestLoadDllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm\TestZedGraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm\TestZedGraphForm.Designer.cs">
+      <DependentUpon>TestZedGraphForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestProxy\ProxyTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestProxy\ProxyTestForm.Designer.cs">
+      <DependentUpon>ProxyTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\BrokerProfileItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\BrokerProfileItems.Designer.cs">
+      <DependentUpon>BrokerProfileItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\IBLoginTest\IBAccountUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\IBLoginTest\IBAccountUserControl.Designer.cs">
+      <DependentUpon>IBAccountUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\IBLoginTest\IBContractUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\IBLoginTest\IBContractUserControl.Designer.cs">
+      <DependentUpon>IBContractUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\IBLoginTest\IBMarketDataUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\IBLoginTest\IBMarketDataUserControl.Designer.cs">
+      <DependentUpon>IBMarketDataUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\TradePanelUserControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\TradePanelUserControle.Designer.cs">
+      <DependentUpon>TradePanelUserControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\TradeUserControl\AutoTradeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\TradeUserControl\AutoTradeUserControl.Designer.cs">
+      <DependentUpon>AutoTradeUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LoginForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoginForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMudle\CTPLoginForm.resx">
+      <DependentUpon>CTPLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMudle\CTPRealLoginForm.resx">
+      <DependentUpon>CTPRealLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMudle\FutuLoginForm.resx">
+      <DependentUpon>FutuLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMudle\IBLoginForm.resx">
+      <DependentUpon>IBLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMudle\OkexLoginForm.resx">
+      <DependentUpon>OkexLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMudle\TuShareLoginForm.resx">
+      <DependentUpon>TuShareLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\AddInstruments.resx">
+      <DependentUpon>AddInstruments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\ConnectListForm.resx">
+      <DependentUpon>ConnectListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\OrderAccountListForm.resx">
+      <DependentUpon>OrderAccountListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\PositionCompareForm.resx">
+      <DependentUpon>PositionCompareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\QueryContractForm.resx">
+      <DependentUpon>QueryContractForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\QuoteManager.resx">
+      <DependentUpon>QuoteManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\StrategySettingsForm.resx">
+      <DependentUpon>StrategySettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\ZedKLineForm.resx">
+      <DependentUpon>ZedKLineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerConnect\BrokerProfileForm.resx">
+      <DependentUpon>BrokerProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerConnect\ManagerListConnect.resx">
+      <DependentUpon>ManagerListConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StrategyPerfomace\ClosePLSeriesUserControl.resx">
+      <DependentUpon>ClosePLSeriesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StrategyPerfomace\StrategyPerfomace.resx">
+      <DependentUpon>StrategyPerfomace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm\RenkoCreateTestForm.resx">
+      <DependentUpon>RenkoCreateTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm\TestLoadDllForm.resx">
+      <DependentUpon>TestLoadDllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm\TestZedGraphForm.resx">
+      <DependentUpon>TestZedGraphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestProxy\ProxyTestForm.resx">
+      <DependentUpon>ProxyTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\BrokerProfileItems.resx">
+      <DependentUpon>BrokerProfileItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\IBLoginTest\IBAccountUserControl.resx">
+      <DependentUpon>IBAccountUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\IBLoginTest\IBContractUserControl.resx">
+      <DependentUpon>IBContractUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\IBLoginTest\IBMarketDataUserControl.resx">
+      <DependentUpon>IBMarketDataUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\TradePanelUserControle.resx">
+      <DependentUpon>TradePanelUserControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resource\OhlcData.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="catico.ico" />
+    <Content Include="image\1-01.png" />
+    <Content Include="image\1-02.png" />
+    <Content Include="image\1-03.png" />
+    <Content Include="image\1-04.png" />
+    <Content Include="image\1eb8d80033316c55cf3b4a8f46bb4853_00573d6d0329fe6.jpg" />
+    <Content Include="image\292afea02bb78f1677bda6bde30203e.png" />
+    <Content Include="image\6b41346d30a6d19b7fdfc283add2871.png" />
+    <Content Include="image\a2102536be0be8e0e7fa63dee8061a6e_t01bcc617f0d4a93e3a.jpg" />
+    <Content Include="image\a6972a654ac8684e04cdabc48cdb56f.png" />
+    <Content Include="image\ai.jpg" />
+    <Content Include="image\btn15M_Two.png" />
+    <Content Include="image\btn1M_Two.png" />
+    <Content Include="image\btn30M_Two.png" />
+    <Content Include="image\btn30S_Two.png" />
+    <Content Include="image\btn3M_Two.png" />
+    <Content Include="image\btn5M_Two.png" />
+    <Content Include="image\btn60M_Two.png" />
+    <Content Include="image\btnDay_Two.png" />
+    <Content Include="image\btnMarketList_Two.png" />
+    <Content Include="image\btnMonth_Two.png" />
+    <None Include="image\crossCursor.jpg" />
+    <Content Include="image\Forum.ico" />
+    <Content Include="image\Forward Arrow.png" />
+    <Content Include="image\icons8-1-48.png" />
+    <Content Include="image\icons8-15-48.png" />
+    <Content Include="image\icons8-3-48.png" />
+    <Content Include="image\icons8-30-48.png" />
+    <Content Include="image\icons8-5-48.png" />
+    <Content Include="image\icons8-60-48.png" />
+    <Content Include="image\icons8-automatic-48.png" />
+    <Content Include="image\icons8-calendar-30-48 %281%29.png" />
+    <Content Include="image\icons8-calendar-30-48.png" />
+    <Content Include="image\icons8-cancel-48.png" />
+    <Content Include="image\icons8-circled-5-c-filled-48.png" />
+    <Content Include="image\icons8-collapse-48.png" />
+    <Content Include="image\icons8-css-48.png" />
+    <Content Include="image\icons8-customer-48.png" />
+    <Content Include="image\icons8-edit-file-48.png" />
+    <Content Include="image\icons8-expand-48.png" />
+    <Content Include="image\icons8-go-48.png" />
+    <Content Include="image\icons8-google-forms-48.png" />
+    <Content Include="image\icons8-heart-monitor-48.png" />
+    <Content Include="image\icons8-layout-48.png" />
+    <Content Include="image\icons8-level-1-48.png" />
+    <Content Include="image\icons8-merge-cells-48.png" />
+    <Content Include="image\icons8-ok-48.png" />
+    <Content Include="image\icons8-plus-1-day-48.png" />
+    <Content Include="image\icons8-purchase-order-48.png" />
+    <Content Include="image\icons8-radar-48.png" />
+    <Content Include="image\icons8-select-column-48.png" />
+    <Content Include="image\icons8-vertical-timeline-48.png" />
+    <Content Include="image\icons8_Delete.ico" />
+    <Content Include="image\icons8_Delete_32.png" />
+    <Content Include="image\icons8_Expand_Arrow_16.png" />
+    <Content Include="image\icons8_Expand_Arrow_32.png" />
+    <Content Include="image\icon_black.png" />
+    <Content Include="image\icon_close.png" />
+    <Content Include="image\icon_close_hover.png" />
+    <Content Include="image\icon_login.png" />
+    <Content Include="image\icon_login_hover.png" />
+    <Content Include="image\icon_max.png" />
+    <Content Include="image\icon_max_hover.png" />
+    <Content Include="image\icon_mini.png" />
+    <Content Include="image\icon_mini_hover.png" />
+    <Content Include="image\icon_new.png" />
+    <Content Include="image\icon_publish.png" />
+    <Content Include="image\icon_registered.png" />
+    <Content Include="image\icon_registered_hover.png" />
+    <Content Include="image\icon_white.png" />
+    <Content Include="image\line.jpg" />
+    <Content Include="image\mark.png" />
+    <Content Include="image\QQ截图20190606192527.png" />
+    <Content Include="image\select_normal.png" />
+    <Content Include="image\select_press.png" />
+    <Content Include="image\start.png" />
+    <Content Include="image\stop.png" />
+    <None Include="image\supportOK.jpg" />
+    <None Include="image\support2.jpg" />
+    <Content Include="image\tips.png" />
+    <Content Include="License-LGPL.txt" />
+    <None Include="Resources\up.jpg" />
+    <None Include="Resources\up1.jpg" />
+    <None Include="Resources\up2.jpg" />
+    <Content Include="Sounds\alert.wav" />
+    <Content Include="Sounds\alert2.wav" />
+    <Content Include="Sounds\connect.wav" />
+    <Content Include="Sounds\disconnect.wav" />
+    <Content Include="Sounds\email.wav" />
+    <Content Include="Sounds\expert.wav" />
+    <Content Include="Sounds\news.wav" />
+    <Content Include="Sounds\ok.wav" />
+    <Content Include="Sounds\stops.wav" />
+    <Content Include="Sounds\tick.wav" />
+    <Content Include="Sounds\timeout.wav" />
+    <Content Include="Sounds\wait.wav" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

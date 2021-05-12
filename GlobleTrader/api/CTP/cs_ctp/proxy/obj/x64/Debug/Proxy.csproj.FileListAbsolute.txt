@@ -1,0 +1,9 @@
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\Debug\Proxy.XML
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\Debug\Proxy.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\Debug\Proxy.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\obj\x64\Debug\Proxy.csprojAssemblyReference.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\obj\x64\Debug\HaiFeng.Properties.Resources.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\obj\x64\Debug\Proxy.csproj.GenerateResource.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\obj\x64\Debug\Proxy.csproj.CoreCompileInputs.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\obj\x64\Debug\Proxy.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy\obj\x64\Debug\Proxy.pdb

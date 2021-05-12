@@ -1,0 +1,7 @@
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\Commonlib\TestService.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\Commonlib\TestService.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestService\obj\Debug\TestService.csproj.CoreCompileInputs.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestService\obj\Debug\TestService.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestService\obj\Debug\TestService.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestService\obj\Debug\TestService.csprojAssemblyReference.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\TestService\obj\Debug\TestService.csproj.CopyComplete

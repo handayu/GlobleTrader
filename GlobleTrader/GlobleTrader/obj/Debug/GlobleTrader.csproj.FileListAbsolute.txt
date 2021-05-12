@@ -1,0 +1,142 @@
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.LoginForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.CTPLoginForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.CTPRealLoginForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.IBLoginForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.TuShareLoginForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.AboutForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.AddInstruments.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.OrderAccountListForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.PositionCompareForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.QuoteManager.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.MainForm.RegForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.StrategySettingsForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.WelcomeForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.ZedKLineForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.BrokerProfileForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.ManagerListConnect.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.Properties.Resources.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.StrategyPerfomace.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.RenkoCreateTestForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.TestLoadDllForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.TestZedGraphForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.BrokerProfileItems.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.IBAccountUserControl.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.IBContractUserControl.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.IBMarketDataUserControl.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.TradePanelUserControle.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.StrategyPerfomace.ClosePLSeriesUserControl.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.ProxyTestForm.resources
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\GlobleTrader.exe.config
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\GlobleTrader.exe
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\GlobleTrader.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\IBDLL.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\OKExSDKLibrary.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Reg.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TALibraryInCSharp.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TestProxy.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\IBDLL.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\OKExSDKLibrary.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Reg.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TALibraryInCSharp.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TestProxy.pdb
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\ZedGraph.xml
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.csproj.CopyComplete
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.exe
+C:\Users\Administrator\Desktop\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\GlobleTrader.exe.config
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\GlobleTrader.exe
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\GlobleTrader.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\IBDLL.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Newtonsoft.Json.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\OKExSDKLibrary.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Reg.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TALibraryInCSharp.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TestProxy.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\ZedGraph.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\IBDLL.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Newtonsoft.Json.xml
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\OKExSDKLibrary.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Reg.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TALibraryInCSharp.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TestProxy.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\ZedGraph.xml
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\de\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\es\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\fr\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\hu\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\it\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\ja\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\pt\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\ru\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\sk\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\sv\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\tr\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.csprojAssemblyReference.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.LoginForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.CTPLoginForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.CTPRealLoginForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.IBLoginForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.TuShareLoginForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.AboutForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.AddInstruments.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.OrderAccountListForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.PositionCompareForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.QuoteManager.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.MainForm.RegForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.StrategySettingsForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.WelcomeForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.ZedKLineForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.BrokerProfileForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.ManagerListConnect.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.Properties.Resources.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.StrategyPerfomace.ClosePLSeriesUserControl.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.StrategyPerfomace.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.RenkoCreateTestForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.TestLoadDllForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.TestZedGraphForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.BrokerProfileItems.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.IBAccountUserControl.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.IBContractUserControl.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.IBMarketDataUserControl.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.TradePanelUserControle.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.csproj.GenerateResource.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.csproj.CoreCompileInputs.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.csproj.CopyComplete
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.exe
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\GlobleTrader.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.OkexLoginForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.QueryContractForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.FutuLoginForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.ConnectListForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.ProxyTestForm.resources
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TestService.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\TestService.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Proxy.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Proxy.xml
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Proxy.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\OKExSDK.dll

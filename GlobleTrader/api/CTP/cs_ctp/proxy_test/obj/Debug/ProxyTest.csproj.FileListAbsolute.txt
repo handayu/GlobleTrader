@@ -1,0 +1,21 @@
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\CTPTest.exe.config
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\CTPTest.exe
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\CTPTest.pdb
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\Proxy.dll
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\Proxy.pdb
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\Debug\Proxy.xml
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\Debug\ProxyTest.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\Debug\ProxyTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\Debug\ProxyTest.csproj.CopyComplete
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\Debug\CTPTest.exe
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy_test\obj\Debug\CTPTest.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\Debug\CTPTest.exe.config
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\Debug\CTPTest.exe
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\Debug\CTPTest.pdb
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\Debug\Proxy.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\Debug\Proxy.xml
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\obj\Debug\ProxyTest.csprojAssemblyReference.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\obj\Debug\ProxyTest.csproj.CoreCompileInputs.cache
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\obj\Debug\ProxyTest.csproj.CopyComplete
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\obj\Debug\CTPTest.exe
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\CTP\cs_ctp\proxy_test\obj\Debug\CTPTest.pdb

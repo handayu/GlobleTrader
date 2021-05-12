@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\Debug\Proxy.XML
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\Debug\Proxy.dll
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\Debug\Proxy.pdb
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\obj\Debug\Proxy.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\obj\Debug\HaiFeng.Properties.Resources.resources
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\obj\Debug\Proxy.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\obj\Debug\Proxy.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\obj\Debug\Proxy.dll
+C:\Users\Administrator\Desktop\海风参考\pyctp-master\cs_ctp\proxy\obj\Debug\Proxy.pdb

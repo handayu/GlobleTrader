@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45925472-0788-4F58-9581-F8D4FBBD9C1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IBDLL</RootNamespace>
+    <AssemblyName>IBDLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Commonlib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\IBClient.cs" />
+    <Compile Include="Message\TickReqParamsMessage.cs" />
+    <Compile Include="Struct\AccountSummaryTags.cs" />
+    <Compile Include="Struct\Bar.cs" />
+    <Compile Include="Struct\BitMask.cs" />
+    <Compile Include="Struct\ComboLeg.cs" />
+    <Compile Include="Struct\CommissionReport.cs" />
+    <Compile Include="Struct\Constants.cs" />
+    <Compile Include="Struct\Contract.cs" />
+    <Compile Include="Struct\ContractCondition.cs" />
+    <Compile Include="Struct\ContractDescription.cs" />
+    <Compile Include="Struct\ContractDetails.cs" />
+    <Compile Include="Struct\DefaultEWrapper.cs" />
+    <Compile Include="Struct\DeltaNeutralContract.cs" />
+    <Compile Include="Struct\DepthMktDataDescription.cs" />
+    <Compile Include="Struct\EClient.cs" />
+    <Compile Include="Struct\EClientErrors.cs" />
+    <Compile Include="Struct\EClientException.cs" />
+    <Compile Include="Struct\EClientMsgSink.cs" />
+    <Compile Include="Struct\EClientSocket.cs" />
+    <Compile Include="Struct\EClientSocketSSL.cs" />
+    <Compile Include="Struct\EDecoder.cs" />
+    <Compile Include="Struct\EMessage.cs" />
+    <Compile Include="Struct\EOrderDecoder.cs" />
+    <Compile Include="Struct\EReader.cs" />
+    <Compile Include="Struct\EReaderMonitorSignal.cs" />
+    <Compile Include="Struct\EReaderSignal.cs" />
+    <Compile Include="Struct\ESocket.cs" />
+    <Compile Include="Struct\ETransport.cs" />
+    <Compile Include="Struct\EWrapper.cs" />
+    <Compile Include="Struct\Execution.cs" />
+    <Compile Include="Struct\ExecutionCondition.cs" />
+    <Compile Include="Struct\ExecutionFilter.cs" />
+    <Compile Include="Struct\FamilyCode.cs" />
+    <Compile Include="Struct\HistogramEntry.cs" />
+    <Compile Include="Struct\HistoricalTick.cs" />
+    <Compile Include="Struct\HistoricalTickBidAsk.cs" />
+    <Compile Include="Struct\HistoricalTickLast.cs" />
+    <Compile Include="Struct\IBParamsList.cs" />
+    <Compile Include="Struct\IDecoder.cs" />
+    <Compile Include="Struct\IncomingMessage.cs" />
+    <Compile Include="Struct\MarginCondition.cs" />
+    <Compile Include="Struct\MessageValidator.cs" />
+    <Compile Include="Struct\MinServerVer.cs" />
+    <Compile Include="Struct\NewsProvider.cs" />
+    <Compile Include="Struct\OperatorCondition.cs" />
+    <Compile Include="Struct\Order.cs" />
+    <Compile Include="Struct\OrderComboLeg.cs" />
+    <Compile Include="Struct\OrderCondition.cs" />
+    <Compile Include="Struct\OrderState.cs" />
+    <Compile Include="Struct\OutgoingMessages.cs" />
+    <Compile Include="Struct\PercentChangeCondition.cs" />
+    <Compile Include="Struct\PriceCondition.cs" />
+    <Compile Include="Struct\PriceIncrement.cs" />
+    <Compile Include="Struct\ScannerSubscription.cs" />
+    <Compile Include="Struct\SoftDollarTier.cs" />
+    <Compile Include="Struct\TagValue.cs" />
+    <Compile Include="Struct\TickAttrib.cs" />
+    <Compile Include="Struct\TickAttribBidAsk.cs" />
+    <Compile Include="Struct\TickAttribLast.cs" />
+    <Compile Include="Struct\TickType.cs" />
+    <Compile Include="Struct\TimeCondition.cs" />
+    <Compile Include="Struct\Util.cs" />
+    <Compile Include="Struct\VolumeCondition.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Message\AccountDownloadEndMessage.cs" />
+    <Compile Include="Message\AccountSummaryEndMessage.cs" />
+    <Compile Include="Message\AccountSummaryMessage.cs" />
+    <Compile Include="Message\AccountUpdateMultiEndMessage.cs" />
+    <Compile Include="Message\AccountUpdateMultiMessage.cs" />
+    <Compile Include="Message\AccountValueMessage.cs" />
+    <Compile Include="Message\AdvisorDataMessage.cs" />
+    <Compile Include="Message\BondContractDetailsMessage.cs" />
+    <Compile Include="Message\CommissionMessage.cs" />
+    <Compile Include="Message\CompletedOrderMessage.cs" />
+    <Compile Include="Message\ConnectionStatusMessage.cs" />
+    <Compile Include="Message\ContractDetailsEndMessage.cs" />
+    <Compile Include="Message\ContractDetailsMessage.cs" />
+    <Compile Include="Message\DailyPnLMessage.cs" />
+    <Compile Include="Message\DailyPnLSingleMessage.cs" />
+    <Compile Include="Message\DeepBookMessage.cs" />
+    <Compile Include="Message\ErrorMessage.cs" />
+    <Compile Include="Message\ExecutionMessage.cs" />
+    <Compile Include="Message\FamilyCodesMessage.cs" />
+    <Compile Include="Message\FundamentalsMessage.cs" />
+    <Compile Include="Message\HeadTimestampMessage.cs" />
+    <Compile Include="Message\HistogramDataMessage.cs" />
+    <Compile Include="Message\HistoricalDataEndMessage.cs" />
+    <Compile Include="Message\HistoricalDataMessage.cs" />
+    <Compile Include="Message\HistoricalNewsEndMessage.cs" />
+    <Compile Include="Message\HistoricalNewsMessage.cs" />
+    <Compile Include="Message\HistoricalTickBidAskEndMessage.cs" />
+    <Compile Include="Message\HistoricalTickBidAskMessage.cs" />
+    <Compile Include="Message\HistoricalTickEndMessage.cs" />
+    <Compile Include="Message\HistoricalTickLastEndMessage.cs" />
+    <Compile Include="Message\HistoricalTickLastMessage.cs" />
+    <Compile Include="Message\HistoricalTickMessage.cs" />
+    <Compile Include="Message\ManagedAccountsMessage.cs" />
+    <Compile Include="Message\MarketDataMessage.cs" />
+    <Compile Include="Message\MarketDataTypeMessage.cs" />
+    <Compile Include="Message\MarketRuleMessage.cs" />
+    <Compile Include="Message\MktDepthExchangesMessage.cs" />
+    <Compile Include="Message\NewsArticleMessage.cs" />
+    <Compile Include="Message\NewsProvidersMessage.cs" />
+    <Compile Include="Message\OpenOrderMessage.cs" />
+    <Compile Include="Message\OrderBoundMessage.cs" />
+    <Compile Include="Message\OrderMessage.cs" />
+    <Compile Include="Message\OrderStatusMessage.cs" />
+    <Compile Include="Message\PositionMessage.cs" />
+    <Compile Include="Message\PositionMultiEndMessage.cs" />
+    <Compile Include="Message\PositionMultiMessage.cs" />
+    <Compile Include="Message\RealTimeBarMessage.cs" />
+    <Compile Include="Message\ScannerEndMessage.cs" />
+    <Compile Include="Message\ScannerMessage.cs" />
+    <Compile Include="Message\ScannerParametersMessage.cs" />
+    <Compile Include="Message\SecurityDefinitionOptionParameterEndMessage.cs" />
+    <Compile Include="Message\SecurityDefinitionOptionParameterMessage.cs" />
+    <Compile Include="Message\SoftDollarTiersMessage.cs" />
+    <Compile Include="Message\SymbolSamplesMessage.cs" />
+    <Compile Include="Message\TickByTickAllLastMessage.cs" />
+    <Compile Include="Message\TickByTickBidAskMessage.cs" />
+    <Compile Include="Message\TickByTickMidPointMessage.cs" />
+    <Compile Include="Message\TickNewsMessage.cs" />
+    <Compile Include="Message\TickOptionMessage.cs" />
+    <Compile Include="Message\TickPriceMessage.cs" />
+    <Compile Include="Message\TickSizeMessage.cs" />
+    <Compile Include="Message\UpdateAccountTimeMessage.cs" />
+    <Compile Include="Message\UpdatePortfolioMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\FinancialAdvisorTypes.cs" />
+    <Compile Include="Tools\IBTypes.cs" />
+    <Compile Include="Tools\Utils.cs" />
+    <Compile Include="Tools\XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
