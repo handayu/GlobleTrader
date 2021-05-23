@@ -263,22 +263,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void teamViwerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string tVPath = System.Windows.Forms.Application.StartupPath + "\\TeamViewerQS.exe";
-
-                //打开
-                System.Diagnostics.Process.Start(tVPath);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("无法找到TeamViwer请确认安装了teamviwer:" + ex.Message);
-            }
-
-        }
-
         private void ToolStripMenuItem_DDEClick(object sender, EventArgs e)
         {
             //DDEService serF = new DDEService();
@@ -456,6 +440,51 @@ namespace WindowsFormsApp1
             f.ShowDialog();
         }
 
+        /// <summary>
+        /// 新浪数据源
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton_SinaData_Click(object sender, EventArgs e)
+        {
+            SinaLoginForm sN = new SinaLoginForm();
+            sN.ShowDialog();
+        }
 
+        #region 帮助
+        private void teamViwerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tVPath = System.Windows.Forms.Application.StartupPath + "\\TeamViewerQS.exe";
+
+                //打开
+                System.Diagnostics.Process.Start(tVPath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("无法找到TeamViwer请确认安装了teamviwer:" + ex.Message);
+            }
+        }
+
+        private void ToolStripMenuItem_HelpAbout_Click(object sender, EventArgs e)
+        {
+            AboutForm a = new AboutForm();
+            a.ShowDialog();
+        }
+
+        private void ToolStripMenuItem_HelpURLLine_Click(object sender, EventArgs e)
+        {
+            //调用系统默认的浏览器 
+            System.Diagnostics.Process.Start("explorer.exe", "https://handayu.github.io/");
+        }
+
+        private void ToolStripMenuItem_HelpVedio_Click(object sender, EventArgs e)
+        {
+            //调用系统默认的浏览器 
+            System.Diagnostics.Process.Start("explorer.exe", "https://space.bilibili.com/412522082");
+        }
+
+        #endregion
     }
 }

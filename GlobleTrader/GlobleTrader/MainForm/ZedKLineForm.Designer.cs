@@ -66,12 +66,12 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton35 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripButton36 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton37 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripComboBox_accountID = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripComboBox_orderType = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripTextBox_volume = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox_price = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton_buy = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_sellshort = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.richTextBox_ChartAndIndicatorsLog = new System.Windows.Forms.RichTextBox();
@@ -80,10 +80,10 @@
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton22 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripComboBox3 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripTextBox4 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripComboBox_DrawAccountID = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripTextBox_Drawshares = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton_DrawBuy = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_DrawSellshort = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
@@ -156,7 +156,7 @@
             this.toolStripButton_ViusalTrade});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(724, 30);
+            this.toolStrip1.Size = new System.Drawing.Size(867, 30);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -176,14 +176,14 @@
             // 
             this.ToolStripMenuItem_StrategyAutoAction.Image = global::GlobleTrader.Properties.Resources._6b41346d30a6d19b7fdfc283add2871;
             this.ToolStripMenuItem_StrategyAutoAction.Name = "ToolStripMenuItem_StrategyAutoAction";
-            this.ToolStripMenuItem_StrategyAutoAction.Size = new System.Drawing.Size(156, 30);
+            this.ToolStripMenuItem_StrategyAutoAction.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem_StrategyAutoAction.Text = "自动交易执行";
             // 
             // ToolStripMenuItem_StrategySettings
             // 
             this.ToolStripMenuItem_StrategySettings.Image = global::GlobleTrader.Properties.Resources.a2102536be0be8e0e7fa63dee8061a6e_t01bcc617f0d4a93e3a;
             this.ToolStripMenuItem_StrategySettings.Name = "ToolStripMenuItem_StrategySettings";
-            this.ToolStripMenuItem_StrategySettings.Size = new System.Drawing.Size(156, 30);
+            this.ToolStripMenuItem_StrategySettings.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem_StrategySettings.Text = "策略属性设置";
             // 
             // toolStripDropDownButton1
@@ -401,15 +401,15 @@
             this.toolStripLabel1,
             this.toolStripLabel2,
             this.toolStripButton35,
-            this.toolStripComboBox1,
-            this.toolStripComboBox2,
-            this.toolStripTextBox3,
-            this.toolStripTextBox2,
-            this.toolStripButton36,
-            this.toolStripButton37});
+            this.toolStripComboBox_accountID,
+            this.toolStripComboBox_orderType,
+            this.toolStripTextBox_volume,
+            this.toolStripTextBox_price,
+            this.toolStripButton_buy,
+            this.toolStripButton_sellshort});
             this.toolStrip2.Location = new System.Drawing.Point(0, 30);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(724, 30);
+            this.toolStrip2.Size = new System.Drawing.Size(867, 30);
             this.toolStrip2.TabIndex = 13;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -446,50 +446,52 @@
             this.toolStripButton35.Size = new System.Drawing.Size(28, 27);
             this.toolStripButton35.Text = "toolStripButton35";
             // 
-            // toolStripComboBox1
+            // toolStripComboBox_accountID
             // 
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 30);
+            this.toolStripComboBox_accountID.Name = "toolStripComboBox_accountID";
+            this.toolStripComboBox_accountID.Size = new System.Drawing.Size(121, 30);
             // 
-            // toolStripComboBox2
+            // toolStripComboBox_orderType
             // 
-            this.toolStripComboBox2.Name = "toolStripComboBox2";
-            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 30);
-            this.toolStripComboBox2.Text = "价格类型";
+            this.toolStripComboBox_orderType.Name = "toolStripComboBox_orderType";
+            this.toolStripComboBox_orderType.Size = new System.Drawing.Size(121, 30);
+            this.toolStripComboBox_orderType.Text = "价格类型";
             // 
-            // toolStripTextBox3
+            // toolStripTextBox_volume
             // 
-            this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 30);
-            this.toolStripTextBox3.Text = "手数";
+            this.toolStripTextBox_volume.Name = "toolStripTextBox_volume";
+            this.toolStripTextBox_volume.Size = new System.Drawing.Size(100, 30);
+            this.toolStripTextBox_volume.Text = "手数";
             // 
-            // toolStripTextBox2
+            // toolStripTextBox_price
             // 
-            this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 30);
-            this.toolStripTextBox2.Text = "价格";
+            this.toolStripTextBox_price.Name = "toolStripTextBox_price";
+            this.toolStripTextBox_price.Size = new System.Drawing.Size(100, 30);
+            this.toolStripTextBox_price.Text = "价格";
             // 
-            // toolStripButton36
+            // toolStripButton_buy
             // 
-            this.toolStripButton36.AutoSize = false;
-            this.toolStripButton36.BackColor = System.Drawing.Color.DarkRed;
-            this.toolStripButton36.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton36.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton36.Image")));
-            this.toolStripButton36.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton36.Name = "toolStripButton36";
-            this.toolStripButton36.Size = new System.Drawing.Size(50, 31);
-            this.toolStripButton36.Text = "买入";
+            this.toolStripButton_buy.AutoSize = false;
+            this.toolStripButton_buy.BackColor = System.Drawing.Color.DarkRed;
+            this.toolStripButton_buy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton_buy.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_buy.Image")));
+            this.toolStripButton_buy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_buy.Name = "toolStripButton_buy";
+            this.toolStripButton_buy.Size = new System.Drawing.Size(50, 31);
+            this.toolStripButton_buy.Text = "买入";
+            this.toolStripButton_buy.Click += new System.EventHandler(this.toolStripButton_buy_Click);
             // 
-            // toolStripButton37
+            // toolStripButton_sellshort
             // 
-            this.toolStripButton37.AutoSize = false;
-            this.toolStripButton37.BackColor = System.Drawing.Color.Chartreuse;
-            this.toolStripButton37.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton37.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton37.Image")));
-            this.toolStripButton37.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton37.Name = "toolStripButton37";
-            this.toolStripButton37.Size = new System.Drawing.Size(50, 31);
-            this.toolStripButton37.Text = "卖出";
+            this.toolStripButton_sellshort.AutoSize = false;
+            this.toolStripButton_sellshort.BackColor = System.Drawing.Color.Chartreuse;
+            this.toolStripButton_sellshort.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton_sellshort.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_sellshort.Image")));
+            this.toolStripButton_sellshort.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_sellshort.Name = "toolStripButton_sellshort";
+            this.toolStripButton_sellshort.Size = new System.Drawing.Size(50, 31);
+            this.toolStripButton_sellshort.Text = "卖出";
+            this.toolStripButton_sellshort.Click += new System.EventHandler(this.toolStripButton_sellshort_Click);
             // 
             // splitContainer1
             // 
@@ -505,7 +507,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.zedGraphControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(718, 381);
+            this.splitContainer1.Size = new System.Drawing.Size(861, 381);
             this.splitContainer1.SplitterDistance = 106;
             this.splitContainer1.TabIndex = 12;
             // 
@@ -555,8 +557,6 @@
             // 
             this.zedGraphControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.zedGraphControl1.IsEnableSelection = true;
-            this.zedGraphControl1.IsEnableVPan = false;
-            this.zedGraphControl1.IsEnableVZoom = false;
             this.zedGraphControl1.IsShowPointValues = true;
             this.zedGraphControl1.Location = new System.Drawing.Point(0, 0);
             this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(6);
@@ -569,7 +569,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(608, 381);
+            this.zedGraphControl1.Size = new System.Drawing.Size(751, 381);
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             this.zedGraphControl1.MouseDownEvent += new ZedGraph.ZedGraphControl.ZedMouseEventHandler(this.ZedMouseDownEvent);
@@ -587,10 +587,10 @@
             this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton22,
             this.toolStripButton1,
-            this.toolStripComboBox3,
-            this.toolStripTextBox4,
-            this.toolStripButton3,
-            this.toolStripButton4,
+            this.toolStripComboBox_DrawAccountID,
+            this.toolStripTextBox_Drawshares,
+            this.toolStripButton_DrawBuy,
+            this.toolStripButton_DrawSellshort,
             this.toolStripButton5,
             this.toolStripButton6,
             this.toolStripButton7,
@@ -600,7 +600,7 @@
             this.toolStrip3.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip3.Location = new System.Drawing.Point(0, 60);
             this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Size = new System.Drawing.Size(724, 30);
+            this.toolStrip3.Size = new System.Drawing.Size(867, 30);
             this.toolStrip3.TabIndex = 14;
             this.toolStrip3.Text = "toolStrip3";
             // 
@@ -625,40 +625,40 @@
             this.toolStripButton1.Size = new System.Drawing.Size(28, 27);
             this.toolStripButton1.Text = "MA";
             // 
-            // toolStripComboBox3
+            // toolStripComboBox_DrawAccountID
             // 
-            this.toolStripComboBox3.Name = "toolStripComboBox3";
-            this.toolStripComboBox3.Size = new System.Drawing.Size(121, 30);
+            this.toolStripComboBox_DrawAccountID.Name = "toolStripComboBox_DrawAccountID";
+            this.toolStripComboBox_DrawAccountID.Size = new System.Drawing.Size(121, 30);
             // 
-            // toolStripTextBox4
+            // toolStripTextBox_Drawshares
             // 
-            this.toolStripTextBox4.Name = "toolStripTextBox4";
-            this.toolStripTextBox4.Size = new System.Drawing.Size(100, 30);
+            this.toolStripTextBox_Drawshares.Name = "toolStripTextBox_Drawshares";
+            this.toolStripTextBox_Drawshares.Size = new System.Drawing.Size(100, 30);
             // 
-            // toolStripButton3
+            // toolStripButton_DrawBuy
             // 
-            this.toolStripButton3.AutoSize = false;
-            this.toolStripButton3.BackColor = System.Drawing.Color.DarkRed;
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(35, 27);
-            this.toolStripButton3.Text = "买";
-            this.toolStripButton3.Click += new System.EventHandler(this.OrderBuyClick);
+            this.toolStripButton_DrawBuy.AutoSize = false;
+            this.toolStripButton_DrawBuy.BackColor = System.Drawing.Color.DarkRed;
+            this.toolStripButton_DrawBuy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton_DrawBuy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.toolStripButton_DrawBuy.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_DrawBuy.Image")));
+            this.toolStripButton_DrawBuy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_DrawBuy.Name = "toolStripButton_DrawBuy";
+            this.toolStripButton_DrawBuy.Size = new System.Drawing.Size(35, 27);
+            this.toolStripButton_DrawBuy.Text = "买";
+            this.toolStripButton_DrawBuy.Click += new System.EventHandler(this.OrderBuyClick);
             // 
-            // toolStripButton4
+            // toolStripButton_DrawSellshort
             // 
-            this.toolStripButton4.AutoSize = false;
-            this.toolStripButton4.BackColor = System.Drawing.Color.DarkRed;
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(35, 27);
-            this.toolStripButton4.Text = "卖";
+            this.toolStripButton_DrawSellshort.AutoSize = false;
+            this.toolStripButton_DrawSellshort.BackColor = System.Drawing.Color.DarkRed;
+            this.toolStripButton_DrawSellshort.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton_DrawSellshort.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.toolStripButton_DrawSellshort.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_DrawSellshort.Image")));
+            this.toolStripButton_DrawSellshort.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_DrawSellshort.Name = "toolStripButton_DrawSellshort";
+            this.toolStripButton_DrawSellshort.Size = new System.Drawing.Size(35, 27);
+            this.toolStripButton_DrawSellshort.Text = "卖";
             // 
             // toolStripButton5
             // 
@@ -759,7 +759,7 @@
             this.toolStrip4.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip4.Location = new System.Drawing.Point(0, 90);
             this.toolStrip4.Name = "toolStrip4";
-            this.toolStrip4.Size = new System.Drawing.Size(724, 30);
+            this.toolStrip4.Size = new System.Drawing.Size(867, 30);
             this.toolStrip4.TabIndex = 15;
             this.toolStrip4.Text = "toolStrip4";
             // 
@@ -999,7 +999,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(724, 507);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(867, 507);
             this.tableLayoutPanel1.TabIndex = 19;
             // 
             // ZedKLineForm
@@ -1007,7 +1007,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(724, 507);
+            this.ClientSize = new System.Drawing.Size(867, 507);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "ZedKLineForm";
@@ -1076,8 +1076,8 @@
         private System.Windows.Forms.RichTextBox richTextBox_StrategyLog;
         private ZedGraph.ZedGraphControl zedGraphControl1;
         private System.Windows.Forms.ToolStrip toolStrip3;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton toolStripButton_DrawBuy;
+        private System.Windows.Forms.ToolStripButton toolStripButton_DrawSellshort;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripButton toolStripButton7;
@@ -1088,12 +1088,12 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripButton toolStripButton35;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox3;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
-        private System.Windows.Forms.ToolStripButton toolStripButton36;
-        private System.Windows.Forms.ToolStripButton toolStripButton37;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox_accountID;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox_orderType;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_volume;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_price;
+        private System.Windows.Forms.ToolStripButton toolStripButton_buy;
+        private System.Windows.Forms.ToolStripButton toolStripButton_sellshort;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStrip toolStrip4;
         private System.Windows.Forms.ToolStripButton toolStripButton23;
@@ -1121,7 +1121,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton47;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.ToolStripButton toolStripButton22;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox3;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox4;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox_DrawAccountID;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_Drawshares;
     }
 }

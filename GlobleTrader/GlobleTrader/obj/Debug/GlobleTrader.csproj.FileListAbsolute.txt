@@ -140,3 +140,4 @@ D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader
 D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Proxy.xml
 D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\Proxy.pdb
 D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\bin\Debug\OKExSDK.dll
+D:\004 对接测试云环境\重要文件\GlobleTrader\GlobleTrader\GlobleTrader\obj\Debug\WindowsFormsApp1.SinaLoginForm.resources

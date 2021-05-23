@@ -95,7 +95,7 @@ namespace TestService
             m_conData = cDInfo;
 
             //订阅实时数据
-            ProxyManager.GetInstance().GetProxy(m_proxy).OnTickEvent += BarMakerService_OnTickEvent;
+            //ProxyManager.GetInstance().GetProxy(m_proxy).OnTickEvent += BarMakerService_OnTickEvent;
 
         }
 

@@ -346,6 +346,7 @@ namespace TestProxy
         USD = 0,//"USD"
         HKD, //"HKD"
         CNY, //"CNY"
+        GBP,
         NULL
     }
 
@@ -402,6 +403,9 @@ namespace TestProxy
         Okex_V3_Swap,
         Okex_V5_Swap,
         MT4,
+        XTP,
+        Sina,
+        HuaXin,
         Demo,
         TuShare,
         TianQin,

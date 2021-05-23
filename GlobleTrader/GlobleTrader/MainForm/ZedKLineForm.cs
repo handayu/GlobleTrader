@@ -35,6 +35,7 @@
 //false，表示：Return false if ZedGraph should go ahead and process the MouseMove event.意思是交给基类继续处理，
 //比如拖拽就是基类完成的，如果这里返回true,那么就表示完全掌控了，不会交给基类继续处理了，所以也就无法拖拽了。
 //完工以后，可以再继续研读zedgraph的原代码
+
 /// <summary>
 /// Subscribe to this event to provide notification of MouseMove events over graph
 /// objects
@@ -90,6 +91,12 @@
 //注意：这里存在一个有意思的是，对于同一个proxy，ObBar,Ontick主动查询类才会多个重复收到，但是不同proxy不会，因为走的是不同的proxy对象
 //对于combox_datasource的buug,因为刚开始初始化了一次，问题在这里。
 //另外一个隐形BUG就是双击之后，需要刷新K线才会出来，okex需要刷，但是tusahre不会，查一下原因，需要；
+
+//注意：打开图表时候，要订阅所有proxy的账户响应，凡是有登陆的，都需要添加到图表的账户列表里，实现在不同的行情和交易之间穿透
+//注意：同时添加上委托类型的枚举列表
+//注意：账户是所有proxy的账户OnAccount的消息，但是其余的OnBar等，按照需要是订阅自己的Proxy的消息流；
+//.....这里是有所区别的，所以不存在疑问，还需要在这里特地说明一下；
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -113,6 +120,10 @@ namespace WindowsFormsApp1
 {
     public partial class ZedKLineForm : DockContent
     {
+        /// <summary>
+        /// 互斥锁-多线程同步问题
+        /// </summary>
+        private object m_mutxObj = new object();
 
         /// <summary>
         /// K线序列
@@ -148,9 +159,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
 
+            //初始化数据信息和历史请求信息
             m_contractData = cd;
             m_hisRequest = hQ;
 
+            //初始化控件
             InitControls();
 
             //BTC永续合约 -K线图1.0 1Min Bar -AutoTrader标题需要标注的重点描述性对象
@@ -217,16 +230,12 @@ namespace WindowsFormsApp1
             this.zedGraphControl1.GraphPane.XAxis.Type = AxisType.DateAsOrdinal;//为什么date不可以，这里的格式-见上面详细说明
             this.zedGraphControl1.GraphPane.XAxis.Scale.Format = "yyyy-MM-dd HH:mm";
 
-            //
-
-
             //this.zedGraphControl1.GraphPane.XAxis.Scale.MinorUnit = DateUnit.Minute;
             //this.zedGraphControl1.GraphPane.XAxis.Scale.MajorUnit = DateUnit.Hour;
 
             //this.zedGraphControl1.GraphPane.XAxis.Scale.MinAuto = true;
             //this.zedGraphControl1.GraphPane.XAxis.Scale.MajorStepAuto = true;
             //this.zedGraphControl1.GraphPane.XAxis.Scale.MaxAuto = true;
-
 
             this.zedGraphControl1.GraphPane.XAxis.CrossAuto = true;//容许x轴的自动放大或缩小
             this.zedGraphControl1.GraphPane.YAxis.CrossAuto = true;//容许y轴的自动放大或缩小
@@ -266,6 +275,30 @@ namespace WindowsFormsApp1
             myPane.Fill = new Fill(Color.Black, Color.Black, 45.0f);
             this.zedGraphControl1.AxisChange();
 
+            //订阅所有Proxy的OnAccount
+            //获取所有Manager的Proxy,每个Proxy都有自己的AccountData,获取所有连接的AccoutData-
+            //先在打开的时候默认把登陆的proxy的缓存都查一遍放进去，后面再有登陆的，直接监听，添加
+            foreach (PROXYTHROUGH proxy in Enum.GetValues(typeof(PROXYTHROUGH)))
+            {
+                if (null == ProxyManager.GetInstance().GetProxy(proxy)) continue;
+
+                ProxyManager.GetInstance().GetProxy(proxy).OnAccountEvent += ZedKLineForm_OnAccountEvent;
+
+                List<AccountData> accList = ProxyManager.GetInstance().GetProxy(proxy).AccountData;
+                if (accList == null || accList.Count <= 0) continue;
+                foreach (AccountData d in accList)
+                {
+                    if (d == null) continue;
+                    this.toolStripComboBox_accountID.Items.Add(d.AccountName);
+                    this.toolStripComboBox_DrawAccountID.Items.Add(d.AccountName);
+                }
+
+            }
+
+            //初始化下单委托类型
+            this.toolStripComboBox_orderType.Items.Add("市价单");
+            this.toolStripComboBox_orderType.Items.Add("限价单");
+
             //订阅OnBar
             ProxyManager.GetInstance().GetProxy(m_contractData.Proxy).OnBarEvent += ZedKLineForm_OnBarEvent;
 
@@ -286,6 +319,15 @@ namespace WindowsFormsApp1
 
             //合成K线-根据打开的图表的Interval合成
             m_BarMakerService = new BarMakerService(m_hisRequest, m_contractData, m_hisRequest.Proxy);
+        }
+
+        /// <summary>
+        /// 动态账户登录添加
+        /// </summary>
+        /// <param name="accD"></param>
+        private void ZedKLineForm_OnAccountEvent(List<AccountData> accD)
+        {
+             
         }
 
         private StockPt pt = null;
@@ -524,9 +566,10 @@ namespace WindowsFormsApp1
                     text.Tag = false;
                     zedGraphControl.GraphPane.GraphObjList.Add(text);
 
-                    LineObj lineObj = new LineObj(Color.Blue, zedGraphControl.GraphPane.Rect.Left, y, zedGraphControl.Width, y);
-                    lineObj.Line.Color = Color.Green;
+                    LineObj lineObj = new LineObj(Color.White, zedGraphControl.GraphPane.Rect.Left, y, zedGraphControl.Width, y);
+                    lineObj.Line.Color = Color.White;
                     lineObj.Line.DashOn = 0.8f;
+                    lineObj.Line.IsVisible = true;
                     lineObj.Tag = false;
                     zedGraphControl.GraphPane.GraphObjList.Add(lineObj);
 
@@ -1027,6 +1070,57 @@ namespace WindowsFormsApp1
         }
 
         #endregion
+
+        #region 人工下单区
+
+        /// <summary>
+        /// 买入
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton_buy_Click(object sender, EventArgs e)
+        {
+            SendActionOrder(Direction.LONG,Offset.OPEN);
+        }
+
+        /// <summary>
+        /// 卖空
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton_sellshort_Click(object sender, EventArgs e)
+        {
+            SendActionOrder(Direction.SHORT, Offset.OPEN);
+        }
+
+        /// <summary>
+        /// 委托下单-B/S/C
+        /// </summary>
+        private void SendActionOrder(Direction direc,Offset offset)
+        {
+            OrderRequest orReq = new OrderRequest();
+            orReq.Symbol = m_contractData.Symbol;
+            orReq.Exchange = m_contractData.Exchange;
+            orReq.Direction = direc;
+            orReq.OrderType = this.toolStripComboBox_orderType.SelectedIndex ==0? OrderType.MARKET:OrderType.MARKET;
+            
+            orReq.Volume = Convert.ToDouble(this.toolStripTextBox_volume.Text);
+            orReq.Price = Convert.ToDouble(this.toolStripTextBox_price.Text);
+            orReq.Offset = offset;
+
+            ProxyManager.GetInstance().GetProxy(m_contractData.Proxy).SendOrder(orReq);
+        }
+
+        #endregion
+
+        #region 画线指标区
+
+        #endregion
+
+        #region 指标设置区
+
+        #endregion
+
 
     }
 }

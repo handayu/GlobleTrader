@@ -6,3 +6,8 @@ GlobleTrader/Commonlib/TestProxy.dll
 *.cache
 *.pdb
 *.dll
+*.pdb
+*.pdb
+*.exe
+*.dll
+*.dll

@@ -523,4 +523,158 @@ namespace TestProxy
         Isolated
     }
     #endregion
+
+    #region V5订单查询
+    public class OrderDetail
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public string accFillSz { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string avgPx { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string cTime { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string category { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ccy { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string clOrdId { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string fee { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string feeCcy { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string fillPx { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string fillSz { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string fillTime { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string instId { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string instType { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string lever { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ordId { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ordType { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string pnl { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string posSide { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string px { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string rebate { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string rebateCcy { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string side { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string slOrdPx { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string slTriggerPx { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string state { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string sz { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string tag { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string tdMode { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string tpOrdPx { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string tpTriggerPx { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string tradeId { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string uTime { get; set; }
+    }
+    public class OrderV5
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public string code { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public List<DataItem> data { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string msg { get; set; }
+    }
+    #endregion
+
+    #region V5成交查询
+
+
+    #endregion
 }

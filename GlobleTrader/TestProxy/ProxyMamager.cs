@@ -21,7 +21,7 @@ namespace TestProxy
         private OkexProxy_V3 okexProxy_v3;
         private OkexProxy_V5 okexProxy_v5;
         private CSimNowProxy simNowProxy;
-
+        private CSinaProxy sinaProxy;
         private ProxyManager()
         {
             //demoProxy = new CMyDemoProxy(PROXYTHROUGH.Demo);
@@ -31,7 +31,7 @@ namespace TestProxy
             okexProxy_v3 = new OkexProxy_V3(PROXYTHROUGH.Okex_V3_Swap);
             okexProxy_v5 = new OkexProxy_V5(PROXYTHROUGH.Okex_V5_Swap);
             simNowProxy = new CSimNowProxy(PROXYTHROUGH.SimNow);
-
+            sinaProxy = new CSinaProxy(PROXYTHROUGH.Sina);
         }
 
         public static ProxyManager GetInstance()
@@ -61,6 +61,8 @@ namespace TestProxy
                     return okexProxy_v5;
                 case PROXYTHROUGH.SimNow:
                     return simNowProxy;
+                case PROXYTHROUGH.Sina:
+                    return sinaProxy;
                 default:
                     break;
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,13 @@ namespace TestProxy
         /// <summary>
         /// 定时任务-查询实时行情返回
         /// </summary>
-        private System.Threading.Timer m_timer = null;
+        private System.Threading.Timer m_timerQueryMarket = null;
+        private System.Threading.Timer m_timerQueryTrade = null;
+
+        /// <summary>
+        /// 多线程事务锁
+        /// </summary>
+        private object m_Mutx = new object();
 
         /// <summary>
         /// 构造函数
@@ -103,6 +110,12 @@ namespace TestProxy
                 QueryV5Position();
                 QueryV5Trade();
                 QueryV5Order();
+
+                //开始交易定时器，定时轮询HTTP业务
+                if (null == m_timerQueryTrade)
+                {
+                    //m_timerQueryTrade = new System.Threading.Timer(QueryTradeData, null, 0, 1000);
+                }
             }
         }
 
@@ -200,23 +213,26 @@ namespace TestProxy
         }
 
         /// <summary>
-        /// 查询委托
+        /// 查询成交
         /// </summary>
         private async void QueryV5Trade()
         {
             Dictionary<string, string> m_tradeDic = new Dictionary<string, string>();
-            string tradeDic = await m_tradeApi.GetOrderList(m_tradeDic); //查成交明细
+            string tradeDic = await m_tradeApi.GetOrderList(m_tradeDic); //查成交明细 --四种业务异步同步等待
+
+
 
             //...缓存 - 发布 
         }
 
         /// <summary>
-        /// 查询成交
+        /// 查询委托
         /// </summary>
         private async void QueryV5Order()
         {
             Dictionary<string, string> m_orderDic = new Dictionary<string, string>();
-            string orderDic = await m_tradeApi.GetOrderDetails(m_orderDic); //查委托明细
+            m_orderDic["instType"] = OkexCommon.Trans_CommonProduct_ToOkexV5(Product.INDEX); //-
+            string orderDic = await m_tradeApi.GetOrderHistory_7days(m_orderDic); //查委托明细 --四种业务异步同步等待
 
             //...缓存 - 发布 
         }
@@ -307,8 +323,12 @@ namespace TestProxy
                     tList.Add(selfData);
                 }
 
-                this.OnTick(tList);
+                lock(m_Mutx)
+                {
+                    this.OnTick(tList);
+                }
             }
+
         }
 
         private async void SendV5Order(OrderRequest orderReq)
@@ -319,11 +339,10 @@ namespace TestProxy
             //传参
             m_placeOrderDic["instId"] = orderReq.Symbol;
             m_placeOrderDic["tdMode"] = this.m_proxyConfig.Data;
-            m_placeOrderDic["side"] = "";  //buy-sell
-            m_placeOrderDic["ordType"] = "";//market-limit-post_only-fok-ioc
-            m_placeOrderDic["sz"] = "";
-            m_placeOrderDic["px"] = "";
-
+            m_placeOrderDic["side"] = orderReq.Direction == Direction.LONG ? "buy" : "sell";  //buy-sell
+            m_placeOrderDic["ordType"] = orderReq.OrderType == OrderType.MARKET ? "market" : "limit";//market-limit-post_only-fok-ioc
+            m_placeOrderDic["sz"] = orderReq.Volume.ToString();
+            m_placeOrderDic["px"] = orderReq.Price.ToString();
 
             string placeOrderStr = await m_tradeApi.PlaceOrder(m_placeOrderDic);   //查账户明细
 
@@ -426,19 +445,41 @@ namespace TestProxy
             //throw new NotImplementedException();
             //对于OKexV5来说，在这里直接订阅所有行情推送-也可以按照合约订阅，后面可以优化
             //
-            if (null == m_timer)
+            if (null == m_timerQueryMarket)
             {
-                m_timer = new System.Threading.Timer(QueryRealDepthMarketData, null, 0, 500);
+                m_timerQueryMarket = new System.Threading.Timer(QueryRealDepthMarketData, null, 0, 500);
             }
         }
 
         private void QueryRealDepthMarketData(object state)
         {
-            QueryV5TickData(Product.SPOT);
-            QueryV5TickData(Product.FUTURES);
-            QueryV5TickData(Product.INDEX);
-            QueryV5TickData(Product.OPTION);
+            try
+            {
+                QueryV5TickData(Product.SPOT);
+                QueryV5TickData(Product.FUTURES);
+                QueryV5TickData(Product.INDEX);
+                QueryV5TickData(Product.OPTION);
+            }
+            catch(System.Net.WebException ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+           
+        }
 
+        private void QueryTradeData(object state)
+        {
+            //轮询账户
+            QueryV5Account();
+
+            //轮询持仓
+            QueryV5Position();
+
+            //轮询交易
+            QueryV5Trade();
+
+            //轮询委托
+            QueryV5Order();
         }
 
         public override void Close()

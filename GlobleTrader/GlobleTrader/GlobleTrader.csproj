@@ -122,6 +122,12 @@
     <Compile Include="LoginMudle\OkexLoginForm.Designer.cs">
       <DependentUpon>OkexLoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginMudle\SinaLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMudle\SinaLoginForm.Designer.cs">
+      <DependentUpon>SinaLoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginMudle\TuShareLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginMudle\OkexLoginForm.resx">
       <DependentUpon>OkexLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMudle\SinaLoginForm.resx">
+      <DependentUpon>SinaLoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginMudle\TuShareLoginForm.resx">
       <DependentUpon>TuShareLoginForm.cs</DependentUpon>

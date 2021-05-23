@@ -117,15 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>    该终端为专业程序化交易软件,支持各大交易所，柜台，内盘和外盘交易，
-支持的业务包含股票、期货、期权，外汇等。提供量化分析选股，动量追踪，
-篮子交易等子模块,能自由编写自动化交易策略，实现准确的数据回测，并依
-据回测结果在本终端完成从数据投研到落地实盘交易全链条支持,真正意义上
-实现一个终端，管理全球所有账户资产和策略，实现统一运维，监控，交易，
-清算等。无论对于投研人员，还是对于交易者，都是极佳的选择。
-
-      最让人振奋人心得是，本终端会一直升级和维护，不断新增，完善新的功
-能子模块，以使交易员可以随时获得最佳的交易体验。</value>
-  </data>
 </root>

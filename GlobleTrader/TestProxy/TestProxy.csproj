@@ -85,6 +85,9 @@
     <Compile Include="SimProxy\CMyDemoProxy.cs" />
     <Compile Include="SimProxy\CTestProxy.cs" />
     <Compile Include="SimProxy\CTestProxyData.cs" />
+    <Compile Include="SinaProxy\CSinaAPI.cs" />
+    <Compile Include="SinaProxy\CSinaProxy.cs" />
+    <Compile Include="SinaProxy\CSinaTransHelper.cs" />
     <Compile Include="ToShareProxy\CToShareAPI.cs" />
     <Compile Include="ToShareProxy\CToShareProxy.cs" />
   </ItemGroup>
